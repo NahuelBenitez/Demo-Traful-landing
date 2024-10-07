@@ -17,7 +17,7 @@ export const Navbar2 = () => {
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <img  src={logo}  className="w-8 h-8"/>
-          <span className="text-black text-lg font-semibold">Drogueria TRAFUL</span>
+          <span className="text-black text-lg font-semibold ml-2">Droguería TRAFUL</span>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -50,7 +50,7 @@ export const Navbar2 = () => {
       {mobileMenuOpen && (
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm">
           <div className="flex items-center justify-between">
-            <span className="text-gray-900 text-lg font-semibold">Drogueria TRAFUL</span>
+            <span className="text-gray-900 text-lg font-semibold">Droguería TRAFUL</span>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
