@@ -13,7 +13,7 @@ export const Navbar2 = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-md shadow-bluefb">
+    <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-lg shadow-blue-900">
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <img  src={logo}  className="w-8 h-8"/>

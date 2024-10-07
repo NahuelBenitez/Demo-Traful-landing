@@ -24,7 +24,7 @@ export const ContactPage = () => {
             <div className="mb-4 grid w-full grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name-2" className="mb-1 font-medium">
-                  First Name
+                  Nombre/s
                 </label>
                 <input
                   type="text"
@@ -35,7 +35,7 @@ export const ContactPage = () => {
               </div>
               <div>
                 <label htmlFor="name-3" className="mb-1 font-medium">
-                  Last Name
+                  Apellido/s
                 </label>
                 <input
                   type="text"
@@ -57,7 +57,7 @@ export const ContactPage = () => {
             </div>
             <div className="mb-5 md:mb-6 lg:mb-8">
               <label htmlFor="field" className="mb-1 font-medium">
-                Message
+                Mensaje
               </label>
               <textarea
                 placeholder=""
@@ -90,8 +90,8 @@ export const ContactPage = () => {
                 className="ml-4 inline-block cursor-pointer text-sm max-w-48 md:max-w-full"
                 htmlFor="checkbox-2"
               >
-                By selecting this, you agree to the{" "}
-                <a href="#"> Privacy Policy</a> and <a href="#">Cookie Policy</a>
+                Acepta nuestra Privacidad y condiciones.
+                
               </span>
             </label>
   

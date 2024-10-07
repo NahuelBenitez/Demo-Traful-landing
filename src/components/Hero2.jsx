@@ -11,14 +11,14 @@ export const Hero2 = () => {
             Droguería TRAFUL
           </h1>
           <p className="mb-6 text-sm text-black sm:text-xl lg:mb-8"> {/* Cambiar color a blanco claro */}
-            Somos la droguería de confianza en nuestra comunidad, destacando por un servicio excepcional y un amplio catálogo de productos que promuevan la salud y el bienestar de cada cliente
+          En Droguería TRAFUL, somos tu socio estratégico en el noroeste argentino. Ofrecemos una amplia gama de productos farmacéuticos y un servicio de atención personalizado, para que tu farmacia pueda brindar siempre lo mejor a sus clientes.
           </p>
           {/* Button */}
           <a
             href="#"
             className="mr-6 inline-block items-center rounded-md bg-black px-8 py-4 text-center font-semibold text-white lg:mr-8 hover:opacity-85 transition-all duration-200"
           >
-            Contáctanos
+           Solicitar Información
           </a>
         </div>
         {/* List */}
