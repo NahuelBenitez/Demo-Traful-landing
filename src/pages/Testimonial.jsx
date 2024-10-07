@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Testimonial = () => {
   return (
-    <section className="block">
+    <section className="block bg-slate-300">
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
         {/* Heading */}

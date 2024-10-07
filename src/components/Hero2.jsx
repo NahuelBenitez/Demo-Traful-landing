@@ -16,7 +16,7 @@ export const Hero2 = () => {
         {/* Button */}
         <a
           href="#"
-          className="mr-6 inline-block items-center rounded-md bg-black px-8 py-4 text-center font-semibold text-white lg:mr-8"
+          className="mr-6 inline-block items-center rounded-md bg-black px-8 py-4 text-center font-semibold text-white lg:mr-8 hover:opacity-85 transition-all duration-200"
         >
           Contactanos!
         </a>

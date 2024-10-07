@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import logo1 from '../assets/logo1.png'
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +12,7 @@ export const Navbar = () => {
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         {/* Logo y nombre de la empresa */}
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/path/to/logo.png" className="h-8" alt="Logo" />
+          <img src={logo1} className="h-8" alt="Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Nombre de la Empresa</span>
         </a>
 

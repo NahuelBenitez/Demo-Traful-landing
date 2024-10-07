@@ -1,5 +1,6 @@
 // Navbar2.jsx
 import { useState } from 'react';
+import logo from '../assets/logo.png'
 
 const navigation = [
   { name: 'Inicio', href: '#' },
@@ -12,10 +13,11 @@ export const Navbar2 = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-bluefb">
+    <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-md shadow-bluefb">
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <span className="text-white text-lg font-semibold">Drogueria TRAFUL</span>
+          <img  src={logo}  className="w-8 h-8"/>
+          <span className="text-black text-lg font-semibold">Drogueria TRAFUL</span>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -23,9 +25,9 @@ export const Navbar2 = () => {
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
           >
-            <span className="sr-only">Open main menu</span>
+            
             {/* Icono de menú (puedes agregar un SVG aquí) */}
-            <span className="h-6 w-6">☰</span> 
+            <span className="h-6 w-6 text-blue-700">☰</span> 
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -33,7 +35,7 @@ export const Navbar2 = () => {
            <a
            key={item.name}
            href={item.href}
-           className="text-sm font-semibold leading-6 text-white transition-colors duration-300 hover:text-green-700 hover:underline"
+           className="text-sm font-semibold leading-6 text-black transition-colors duration-300 hover:text-bluefb hover:underline"
          >
            {item.name}
          </a>
@@ -52,7 +54,7 @@ export const Navbar2 = () => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-black"
             >
               <span className="sr-only">Close menu</span>
               {/* Icono de cerrar (puedes agregar un SVG aquí) */}
