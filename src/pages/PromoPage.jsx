@@ -15,18 +15,18 @@ const PromoPage = () => {
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border border-gray-300">
           <thead>
-            <tr className="bg-gray-200 text-gray-600 uppercase text-sm">
-              <th className="py-3 px-4 border-b text-left">Marca</th>
-              <th className="py-3 px-4 border-b text-left">Medicamento</th>
-              <th className="py-3 px-4 border-b text-left">Precio de Venta</th>
+            <tr className="bg-bluefb text-white uppercase text-sm">
+              <th className="py-3 px-4 border-x-2  text-left">Marca</th>
+              <th className="py-3 px-4 border-x-2   text-left">Medicamento</th>
+              <th className="py-3 px-4 border-x-2 text-left">Precio de Venta</th>
             </tr>
           </thead>
           <tbody>
             {promotions.map((promo) => (
               <tr key={promo.id} className="hover:bg-gray-100">
-                <td className="py-3 px-4 border-b text-left">{promo.marca}</td>
-                <td className="py-3 px-4 border-b text-left">{promo.medicamento}</td>
-                <td className="py-3 px-4 border-b text-left">{promo.precio_venta}</td>
+                <td className="py-3 px-4 border-y-2 border-x-2  text-left">{promo.marca}</td>
+                <td className="py-3 px-4 border-y-2 border-x-2  text-left">{promo.medicamento}</td>
+                <td className="py-3 px-4 border-y-2  border-x-2text-left">{promo.precio_venta}</td>
               </tr>
             ))}
           </tbody>

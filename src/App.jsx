@@ -7,10 +7,11 @@ import { Team } from "./pages/Team";
 import { Testimonial } from "./pages/Testimonial";
 import { Navbar2 } from "./components/NavbarV2";
 import WhatsAppButton from "./components/Whatsapp";
-import Loader from "./components/Loader"; // Asegúrate de importar tu Loader
+import Loader from "./components/Loader"; 
 import PromoPage from './pages/PromoPage';
+import { useInView } from 'react-intersection-observer';
 
-function App() {
+const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -29,17 +30,43 @@ function App() {
         <>
           <Navbar2 />
           <Hero2 />
-          <AboutPage />
-          <PromoPage />
-          <Testimonial />
-          <Team />
-          <ContactPage />
+          <SectionWithFadeIn>
+            <AboutPage />
+          </SectionWithFadeIn>
+          <SectionWithFadeIn>
+            <PromoPage />
+          </SectionWithFadeIn>
+          <SectionWithFadeIn>
+            <Testimonial />
+          </SectionWithFadeIn>
+          <SectionWithFadeIn>
+            <Team />
+          </SectionWithFadeIn>
+          <SectionWithFadeIn>
+            <ContactPage />
+          </SectionWithFadeIn>
           <Footer />
           <WhatsAppButton />
         </>
       )}
     </>
   );
-}
+};
+
+// Componente para manejar la aparición al hacer scroll
+const SectionWithFadeIn = ({ children }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Se activa cuando el 10% del componente es visible
+  });
+
+  return (
+    <div 
+      ref={ref} 
+      className={`transition-opacity duration-500 ${inView ? 'opacity-100' : 'opacity-0'}`}
+    >
+      {children}
+    </div>
+  );
+};
 
 export default App;
